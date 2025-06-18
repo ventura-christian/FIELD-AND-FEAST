@@ -7,5 +7,28 @@
     --linen: #F8F4EC;
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
-      
 }
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--soft-white);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    color: var(--midnight-blue);
+}
+
+a {
+    color: var(--olive-green);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
