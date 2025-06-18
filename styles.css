@@ -69,3 +69,13 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: var(--midnight-blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
