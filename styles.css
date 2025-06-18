@@ -78,4 +78,13 @@ nav ul li a {
     color: var(--midnight-blue);
     font-weight: bold;
     font-size: 1.1rem;
+    padding: 5px 0;
 }
+
+nav ul li a:hover {
+    color: var(--dark-charcoal);
+    text-decoration: none;
+}
+
+
+
