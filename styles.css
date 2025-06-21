@@ -222,11 +222,27 @@ footer a {
     font-weight: bold;
 }
 
-/* MEDIA QUERY (medium)*/
+/* MEDIA QUERY: MEDIUM (min-width: 600px)*/
 @media (min-width: 600px) {
     nav ul {
         flex-direction: row;
         justify-content: center;
+    }
+
+    #offerings {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #offerings article {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    #offerings article:nth-child(3) {
+        flex-basis: 95%;
+        max-width: 95%;
     }
     
     #gallery {
