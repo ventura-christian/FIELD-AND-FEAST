@@ -1,9 +1,9 @@
-/* CSS BY CHRISTIAN VENTURA */
+/* CSS BY CHRISTIAN VENTURA: FIELD & FEAST */
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* CSS RESET */
+/* CSS REST */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
     --soft-white: #FAF9F6;
 }
 
-/* GLOBAL STYLES */
+/* GLOBAL STYLES (mobile first/small) */
 body {
     font-family: 'Playfair Display', serif;
     background-color: var(--soft-white);
@@ -88,11 +88,6 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
-/* nav ul li a:hover {
-    color: var(--dark-charcoal);
-    text-decoration: none;
-} */
-
 main {
     max-width: 1200px;
     margin: 40px auto;
@@ -133,9 +128,7 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--dark-charcoal);
     width: 90%;
-    /* flex: 1; */
-    /* min-width: 300px; */
-    /* box-sizing: border-box; */
+
 }
 
 #offerings article:nth-child(3) {
@@ -229,7 +222,7 @@ footer a {
     font-weight: bold;
 }
 
-/* MEDIA QUERY (medium) - min-width: 600px */
+/* MEDIA QUERY (medium)*/
 @media (min-width: 600px) {
     nav ul {
         flex-direction: row;
