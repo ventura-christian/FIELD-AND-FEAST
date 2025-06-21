@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 
 header {
     background-color: var(--midnight-blue);
@@ -108,8 +112,7 @@ section h2 {
     font-size: 2em;
     margin-bottom: 30px;
     padding-bottom: 0.5rem;
-    /* border-bottom: 1px solid var(--champagne-gold); */
-    /* color: var(--midnight-blue); */
+    color: var(--midnight-blue);
 }
 
 #about {
@@ -131,69 +134,54 @@ section h2 {
     align-items: center;
     padding-top: 20px;
     border-bottom: 1px solid var(--champagne-gold);
-
+}
+.offerings1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 30px;
 }
 
-#offerings article {
+.offerings1 article {
     background-color: var(--olive-green);
     color: var(--soft-white);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--dark-charcoal);
-    width: 90%;
+    width: auto; 
+    display: flex; 
+    flex-direction: column;
 }
 
-#offerings article:nth-child(3) {
-    width: 100%;
-}
-
-#offerings article h3 {
+.offerings1 article h3 {
     font-size: 1.5em;
     margin-top: 0;
     color: var(--soft-white);
     margin-bottom: 15px;
 }
 
-#offerings article ul {
+.offerings1 article ul {
     list-style: none;
     padding-left: 0;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#offerings article ul li {
+.offerings1 article ul li {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
     line-height: 1.4;
 }
 
-#offerings article ul li::before {
-    content: '.';
+.offerings1 article ul li::before {
+    content: '•'; 
     color: var(--champagne-gold);
     font-size: 1.2em;
     position: absolute;
     left: 0;
     top: 0;
     font-weight: bold;
-}
-
-.offerings1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    height: 100%;
-}
-
-.offerings1 article {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.offerings1 article:nth-child(3) {
-    grid-column: 1 / -1;
 }
 
 #gallery {
@@ -296,35 +284,24 @@ footer a:hover {
     nav ul {
         flex-direction: row;
         justify-content: center;
+        gap: 20px;
     }
 
-    #offerings {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .offerings1 {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
-    #offerings article {
-        flex: 1 1 45%;
-        max-width: 45%;
-    }
-
-    #offerings article:nth-child(3) {
-        flex-basis: 95%;
-        max-width: 95%;
+    .offerings1 article:nth-child(3) {
+        grid-column: 1 / -1;
     }
     
     #gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .offerings1 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .offerings1 article:nth-child(3) {
-        grid-column: auto;
+    #gallery figure img {
+        height: 250px;
     }
 }
 
@@ -342,8 +319,21 @@ footer a:hover {
         padding: 0 40px;
     }
 
+    .offerings1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .offerings1 article:nth-child(3) {
+        grid-column: auto;
+    }
+
     #gallery {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #gallery figure img {
+        height: 280px;
     }
 }
 
@@ -351,7 +341,7 @@ footer a:hover {
 @media (min-width: 1200px) {
     nav ul li a {
         font-size: 1.2rem;
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     section h2 {
@@ -363,8 +353,22 @@ footer a:hover {
         line-height: 1.5;
     }
 
+    .offerings1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .offerings1 article {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
     #gallery {
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    #gallery figure img {
+        height: 220px;
     }
 }
 
@@ -378,8 +382,25 @@ footer a:hover {
         font-size: 1.8em;
     }
 
-    #offerings article {
+    #about p {
+        font-size: 1em;
+        width: 95%;
+        padding: 0 10px 20px 10px;
+    }
+
+    .offerings1 article {
         padding: 20px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #gallery > p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    #gallery figure img {
+        height: 180px;
     }
 }
 
