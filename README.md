@@ -1,4 +1,4 @@
-# GIT 337 🪫 FIELD & FEAST ASSIGNMENT
+#🪫 FIELD & FEAST Webpage
 <em>Responsive Webpage created by <ul>Christian Ventura</ul></em>
 
 ## 🧠 🧑‍💻 Objectives
