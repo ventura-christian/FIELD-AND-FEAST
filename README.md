@@ -1,5 +1,8 @@
-#🪫 FIELD & FEAST Webpage
+# FIELD & FEAST Webpage
 <em>Responsive Webpage created by <ul>Christian Ventura</ul></em>
+
+## Webpage Link
+[Live Demo](https://ventura-christian.github.io/FIELD-AND-FEAST/)
 
 ## 🧠 🧑‍💻 Objectives
 - To design, build, and publish a website from scratch using concepts learned in this course
@@ -10,8 +13,6 @@
   - Mobile First
   - Responsive Images
 - To create, initialize, and commit my files to a repository through github.com and the github desktop application
-
-## [Live Demo](https://ventura-christian.github.io/FIELD-AND-FEAST/)
 
 ## 📐 Tools used
 - VS Code
